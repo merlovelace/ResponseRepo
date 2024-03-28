@@ -1,12 +1,12 @@
 namespace Application.Responses;
 
-public class GlobalResponse
+public class GlobalResponse<T>
 {
     public string Status { get; set; }
     public string Message { get; set; }
-    public object Data { get; set; }
+    public T Data { get; set; }
 
-    public GlobalResponse(string status, string message, object data)
+    public GlobalResponse(string status, string message, T data)
     {
         Status = status;
         Message = message;
