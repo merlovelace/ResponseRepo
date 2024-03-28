@@ -14,14 +14,13 @@ public class GlobalResponse<T>
     }
 }
 
-//
 // [HttpGet]
 // public IActionResult GetUser(int id)
 // {
 //     var user = _userService.GetUserById(id); // Assuming _userService is your service layer method to fetch user
 //     if (user == null)
 //     {
-//         return NotFound(new ApiResponse("error", "User not found", null));
+//         return NotFound(new GlobalResponse<User>("error", "User not found", null));
 //     }
-//     return Ok(new ApiResponse("success", "Data retrieved successfully", user));
+//     return Ok(new GlobalResponse<User>("success", "Data retrieved successfully", user));
 // }
